@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Zadatak 1</string>
+    <string name="splash">Splash screen</string>
+    <string name="signIn">Sign in</string>
+    <string name="logIn">LOGIN</string>
+    <string name="list">LIST</string>
+    <string name="back">BACK</string>
+</resources>
