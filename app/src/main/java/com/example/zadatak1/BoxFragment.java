@@ -41,18 +41,7 @@ public class BoxFragment extends Fragment {
                              Bundle savedInstanceState) {
         root = (ViewGroup) inflater.inflate(R.layout.fragment_box, container, false);
         ((TextView) root.findViewById(R.id.box_textview)).setText(numberText);
-        // Inflate the layout for this fragment
-//        MaterialButton button = (MaterialButton) root.findViewById(R.id.back_button);
-//        button.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View v)
-//            {
-//
-//                FragmentManager fm = getActivity().getSupportFragmentManager();
-//                fm.popBackStack();
-//            }
-//        });
+
         return root;
     }
 }
