@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 public class BoxActivity extends AppCompatActivity {
@@ -16,7 +15,6 @@ public class BoxActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_box);
-//        findViewById(R.id.toolbar).setVisibility(View.VISIBLE);
         initBoxes();
     }
 
@@ -32,7 +30,6 @@ public class BoxActivity extends AppCompatActivity {
             box.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-//                    findViewById(R.id.toolbar).setVisibility(View.INVISIBLE);
                     FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                     BoxFragment boxFragment = BoxFragment.newInstance(finalNumberText);
                     ft.addToBackStack("Fragment").replace(R.id.activity_container, boxFragment);
@@ -45,7 +42,6 @@ public class BoxActivity extends AppCompatActivity {
 
     public void goBack(View v) {
         if (getFragmentManager().getBackStackEntryCount() > 0) {
-            System.out.println("hereeee");
             getFragmentManager().popBackStack();
         } else {
             super.onBackPressed();

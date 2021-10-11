@@ -4,7 +4,6 @@
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="0.5"
     android:background="@color/grey"
     android:padding="20dp"
     tools:context=".BoxFragment">
@@ -16,15 +15,4 @@
             android:gravity="center"
             android:textSize="25dp"
             android:textStyle="bold" />
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/back_button"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="bottom|right"-->
-<!--            android:backgroundTint="@color/black"-->
-<!--            android:foregroundTint="@color/white"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="@string/back"-->
-<!--            android:onClick="goBack"-->
-<!--            />-->
 </FrameLayout>
