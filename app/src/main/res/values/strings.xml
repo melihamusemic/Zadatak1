@@ -5,4 +5,10 @@
     <string name="logIn">LOGIN</string>
     <string name="list">LIST</string>
     <string name="back">BACK</string>
+    <string name="newBox">CREATE NEW BOX</string>
+    <string name="confirm">SAVE</string>
+    <string name="newBoxName">Enter new box name</string>
+    <string name="newBoxWidth">Enter new box width in dp</string>
+    <string name="newBoxHeight">Enter new box height in dp</string>
+    <string name="newBoxCount">Enter new box count</string>
 </resources>

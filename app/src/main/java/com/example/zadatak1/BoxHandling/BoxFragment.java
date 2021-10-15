@@ -1,4 +1,4 @@
-package com.example.zadatak1;
+package com.example.zadatak1.BoxHandling;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,13 +7,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
-import com.google.android.material.button.MaterialButton;
+import com.example.zadatak1.R;
 
 public class BoxFragment extends Fragment {
-    private ViewGroup root = null;
     private static final String ARG_PARAM1 = "NUMBER";
+    private ViewGroup root = null;
     private String numberText;
 
     public BoxFragment() {

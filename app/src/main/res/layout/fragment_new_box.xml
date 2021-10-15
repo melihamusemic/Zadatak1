@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_box_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".BoxHandling.NewBoxFragment">
+
+    <TextView
+        android:id="@+id/new_box_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:text="Add new box"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_box_title"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/newBoxName" />
+
+    <EditText
+        android:id="@+id/width_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_input"
+        android:layout_marginHorizontal="40dp"
+        android:hint="@string/newBoxWidth"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/width_input"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/newBoxHeight"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/count_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height_input"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/newBoxCount"
+        android:inputType="number" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count_input"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        android:onClick="createBox"
+        android:text="@string/confirm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+
+        <include layout="@layout/back_nav" />
+    </LinearLayout>
+</RelativeLayout>

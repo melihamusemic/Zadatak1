@@ -1,4 +1,4 @@
-package com.example.zadatak1;
+package com.example.zadatak1.loginHandling;
 
 public class Utils {
     private Utils() {
@@ -11,6 +11,14 @@ public class Utils {
 
     public static boolean isPasswordValid(CharSequence password) {
         return password.length() >= 6;
+    }
+
+    public static boolean isNameValid(CharSequence name) {
+        return name.length() > 0;
+    }
+
+    public static boolean isNumberValid(CharSequence num) {
+        return num.length() > 0;
     }
 }
 

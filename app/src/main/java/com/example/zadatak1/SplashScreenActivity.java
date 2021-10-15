@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.zadatak1.loginHandling.LoginActivity;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
